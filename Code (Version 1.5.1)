@@ -1,0 +1,898 @@
+package valorantSoftAim; // Needs to be changed to the name of your file! (Example: "package Main;") 
+
+import java.awt.AWTException;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Robot;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+import java.util.Random;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Main implements ActionListener {
+	
+	public static void main(String[] args) {
+		new Main(); 
+	}
+	
+	JFrame frame; 
+	JLabel l1; 
+	JLabel l2; 
+	JLabel l3; 
+	JLabel l4; 
+	JLabel l5; 
+	JLabel Start; 
+	
+	JPanel Background; 
+	JPanel Line;
+	
+	JButton DelayOn; 
+	JButton DelayOff;
+	JButton AllDelayOff; 
+	
+	JButton SniperOffensive; 
+	JButton Odin;
+	JButton Sniper; 
+	JButton AssaultRifle; 
+	JButton Shotgun;
+	JButton OnlyInScope; 
+	
+	JTextField ClickField; 
+	JButton Activate; 
+	JButton Deactivate; 
+	JLabel ClickDefinition; 
+	JLabel ClickDefinition1; 
+	JButton größer;
+	JButton kleiner;
+	
+	JButton StartButton; 
+	JButton StopButton; 
+	
+	JLabel AnzeigeClicks; 
+	
+	String ClicksUmwandlung; 
+	
+	int x = 959; 
+	int y = 541; 
+	int wh = 1; 
+	int sleep = 1; 
+	
+	int minWait = 1; 
+	int maxWait = 5; 
+	
+	int RedMin = 180; 
+	int RedMax = 255;  
+	int GreenMin = 25; 
+	int GreenMax = 85; 
+	int BlueMin = 25; 
+	int BlueMax = 105; 
+	
+	int wartezeit = 0; 
+	
+	int clicks = 1; 
+	
+	boolean ShotgunModi = false; 
+	
+	boolean AssaultRifleShooting = false; 
+	
+	boolean DOff = false; 
+	
+	boolean MoreTimesShooting = false; 
+	
+	boolean OneTimeShooting = true; 
+	
+	boolean Activated = false; 
+	
+	boolean OIS = false; 
+	
+	int Ausführungen = 1; 
+	
+	String PN7 = "e"; 
+	String PN9 = "i"; 
+	String PN6 = "d"; 
+	String PN11 = "e"; 
+	String PN12 = "r"; 
+	String PN1 = "7"; 
+	String PN2 = "7"; 
+	String PN3 = "5"; 
+	String PN13 = "T"; 
+	String PN10 = "n"; 
+	String PN4 = "5"; 
+	String PN5 = "#"; 
+	
+	Main() {
+		
+		AnzeigeClicks = new JLabel(); 
+		AnzeigeClicks.setText("" + Ausführungen); 
+		AnzeigeClicks.setBounds(290, 650, 45, 30);
+		AnzeigeClicks.setFont(new Font("",Font.PLAIN, 18));
+		AnzeigeClicks.setForeground(Color.black);
+		AnzeigeClicks.setVisible(true);
+		
+		StopButton = new JButton();  
+		StopButton.setText("Stop Soft Aimbot!"); 
+		StopButton.setBounds(15, 695, 453, 50);
+		StopButton.addActionListener(this);
+		StopButton.setFocusable(false);
+		StopButton.setFont(new Font("",Font.BOLD, 20));
+		StopButton.setForeground(Color.DARK_GRAY);
+		StopButton.setBackground(Color.ORANGE);
+		StopButton.setVisible(false);
+		
+		StartButton = new JButton();  
+		StartButton.setText("Start Soft Aimbot!"); 
+		StartButton.setBounds(15, 695, 453, 50);
+		StartButton.addActionListener(this);
+		StartButton.setFocusable(false);
+		StartButton.setFont(new Font("",Font.BOLD, 20));
+		StartButton.setForeground(Color.DARK_GRAY);
+		StartButton.setBackground(Color.cyan);
+		
+		ClickDefinition = new JLabel(); 
+		ClickDefinition.setText("Enter here how often the bot should"); 
+		ClickDefinition.setBounds(15, 643, 800, 30);
+		ClickDefinition.setFont(new Font("",Font.PLAIN, 13));
+		ClickDefinition.setForeground(Color.black);
+		ClickDefinition.setVisible(true);
+		
+		ClickDefinition1 = new JLabel(); 
+		ClickDefinition1.setText("click, when an opponent is seen."); 
+		ClickDefinition1.setBounds(15, 657, 800, 30);
+		ClickDefinition1.setFont(new Font("",Font.PLAIN, 13));
+		ClickDefinition1.setForeground(Color.black);
+		ClickDefinition1.setVisible(true);
+		
+		kleiner = new JButton();  
+		kleiner.setText("<"); 
+		kleiner.setBounds(230, 650, 45, 30);
+		kleiner.addActionListener(this);
+		kleiner.setFocusable(false);
+		kleiner.setFont(new Font("",Font.PLAIN, 13));
+		kleiner.setForeground(Color.DARK_GRAY);
+		kleiner.setBackground(Color.white);
+		
+		größer = new JButton();  
+		größer.setText(">"); 
+		größer.setBounds(325, 650, 45, 30);
+		größer.addActionListener(this);
+		größer.setFocusable(false);
+		größer.setFont(new Font("",Font.PLAIN, 13));
+		größer.setForeground(Color.DARK_GRAY);
+		größer.setBackground(Color.white);
+		
+		Activate = new JButton();  
+		Activate.setText("Activate"); 
+		Activate.setBounds(380, 650, 90, 30);
+		Activate.addActionListener(this);
+		Activate.setFocusable(false);
+		Activate.setFont(new Font("",Font.PLAIN, 13));
+		Activate.setForeground(Color.DARK_GRAY);
+		Activate.setBackground(Color.white);
+		
+		Deactivate = new JButton();  
+		Deactivate.setText("Deactivate"); 
+		Deactivate.setBounds(380, 650, 90, 30);
+		Deactivate.addActionListener(this);
+		Deactivate.setFocusable(false);
+		Deactivate.setFont(new Font("",Font.PLAIN, 11));
+		Deactivate.setForeground(Color.DARK_GRAY);
+		Deactivate.setBackground(Color.white);
+		Deactivate.setVisible(false);
+		
+		Shotgun = new JButton();  
+		Shotgun.setText("Shotgun");
+		Shotgun.setBounds(190, 475, 110, 40);
+		Shotgun.addActionListener(this);
+		Shotgun.setFocusable(false);
+		Shotgun.setFont(new Font("",Font.BOLD, 17));
+		Shotgun.setForeground(Color.DARK_GRAY);
+		Shotgun.setBackground(Color.white);
+		
+		SniperOffensive = new JButton();  
+		SniperOffensive.setText("Sniper offensive");
+		SniperOffensive.setBounds(160, 325, 175, 40);
+		SniperOffensive.addActionListener(this);
+		SniperOffensive.setFocusable(false);
+		SniperOffensive.setFont(new Font("",Font.BOLD, 17));
+		SniperOffensive.setForeground(Color.DARK_GRAY);
+		SniperOffensive.setBackground(Color.white);
+		
+		Odin = new JButton();  
+		Odin.setText("Heavy machine gun");
+		Odin.setBounds(150, 425, 190, 40);
+		Odin.addActionListener(this);
+		Odin.setFocusable(false);
+		Odin.setFont(new Font("",Font.BOLD, 17));
+		Odin.setForeground(Color.DARK_GRAY);
+		Odin.setBackground(Color.white);
+		
+		Sniper = new JButton();  
+		Sniper.setText("Sniper defensive");
+		Sniper.setBounds(160, 375, 175, 40);
+		Sniper.addActionListener(this);
+		Sniper.setFocusable(false);
+		Sniper.setFont(new Font("",Font.BOLD, 17));
+		Sniper.setForeground(Color.DARK_GRAY);
+		Sniper.setBackground(Color.white);
+		
+		AssaultRifle = new JButton();  
+		AssaultRifle.setText("Assault Rifle");
+		AssaultRifle.setBounds(170, 525, 150, 40);
+		AssaultRifle.addActionListener(this);
+		AssaultRifle.setFocusable(false);
+		AssaultRifle.setFont(new Font("",Font.BOLD, 17));
+		AssaultRifle.setForeground(Color.DARK_GRAY);
+		AssaultRifle.setBackground(Color.white);
+		
+		OnlyInScope = new JButton();  
+		OnlyInScope.setText("Only shoot in Scope (Sniper)");
+		OnlyInScope.setBounds(110, 575, 275, 40);
+		OnlyInScope.addActionListener(this);
+		OnlyInScope.setFocusable(false);
+		OnlyInScope.setFont(new Font("",Font.BOLD, 17));
+		OnlyInScope.setForeground(Color.DARK_GRAY);
+		OnlyInScope.setBackground(Color.white);
+		
+		DelayOn = new JButton();  
+		DelayOn.setText("Delay-On");
+		DelayOn.setBounds(195, 100, 100, 40);
+		DelayOn.addActionListener(this);
+		DelayOn.setFocusable(false);
+		DelayOn.setFont(new Font("",Font.BOLD, 15));
+		DelayOn.setForeground(Color.DARK_GRAY);
+		DelayOn.setBackground(Color.white);
+		
+		DelayOff = new JButton();  
+		DelayOff.setText("Delay-Off");
+		DelayOff.setBounds(195, 145, 100, 40);
+		DelayOff.addActionListener(this);
+		DelayOff.setFocusable(false);
+		DelayOff.setFont(new Font("",Font.BOLD, 15));
+		DelayOff.setForeground(Color.DARK_GRAY);
+		DelayOff.setBackground(Color.white);
+		
+		AllDelayOff = new JButton();  
+		AllDelayOff.setText("All Delay Off!");
+		AllDelayOff.setBounds(183, 200, 125, 25);
+		AllDelayOff.addActionListener(this);
+		AllDelayOff.setFocusable(false);
+		AllDelayOff.setFont(new Font("",Font.BOLD, 13));
+		AllDelayOff.setForeground(Color.DARK_GRAY);
+		AllDelayOff.setBackground(Color.white);
+		
+		kleiner.setEnabled(false);
+		größer.setEnabled(false);
+		
+		Background = new JPanel(); 
+		Background.setBounds(0, 0, 1000, 800);
+		Background.setBackground(Color.DARK_GRAY);
+		
+		Line = new JPanel(); 
+		Line.setBounds(10, 275, 464, 475);
+		Line.setBackground(Color.LIGHT_GRAY);
+		
+		l1 = new JLabel(); 
+		l1.setText("Valorant Soft-Aimbot");
+		l1.setBounds(153, -20, 1000, 100);
+		l1.setFont(new Font("",Font.PLAIN, 20));
+		l1.setForeground(Color.white);
+		l1.setVisible(true);
+		
+		l2 = new JLabel(); 
+		l2.setText("Programmer (Discord): " + PN13 + PN12 + PN11 + PN10 + PN9 + PN7 + PN6 + PN5 + PN4 + PN3 + PN2 + PN1);
+		l2.setBounds(132, 10, 1000, 100);
+		l2.setFont(new Font("",Font.BOLD, 13));
+		l2.setForeground(Color.white);
+		l2.setVisible(true);
+		
+		l3 = new JLabel(); 
+		l3.setText("Delay when seeing an enemy:");
+		l3.setBounds(150, 30, 1000, 100);
+		l3.setFont(new Font("",Font.BOLD, 13));
+		l3.setForeground(Color.white);
+		l3.setVisible(true);
+		
+		l4 = new JLabel(); 
+		l4.setText("\"Delay-Off/All Delay Off\" not recommended!");
+		l4.setBounds(125, 190, 1000, 100);
+		l4.setFont(new Font("",Font.BOLD, 12));
+		l4.setForeground(Color.red);
+		l4.setVisible(true);
+		
+		l5 = new JLabel(); 
+		l5.setText("Please select your currently used type of weapon:");
+		l5.setBounds(75, 250, 1000, 100);
+		l5.setFont(new Font("",Font.BOLD, 15));
+		l5.setForeground(Color.black);
+		l5.setVisible(true);
+		
+		Start = new JLabel(); 
+		Start.setText("Soft Aimbot has started!");
+		Start.setBounds(160, 210, 1000, 100);
+		Start.setFont(new Font("",Font.BOLD, 15));
+		Start.setForeground(Color.green);
+		Start.setVisible(false);
+		
+		frame = new JFrame(); 
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(500, 800);
+		frame.setLayout(null);
+		frame.setTitle("Valorant Soft-Aimbot (Alpha Version 1.5.1)");
+		frame.setLocationRelativeTo(null);
+		frame.setResizable(false);
+		frame.add(l1); 
+		frame.add(l2); 
+		frame.add(l3); 
+		frame.add(DelayOn); 
+		frame.add(DelayOff); 
+		frame.add(l4); 
+		frame.add(l5); 
+		frame.add(AllDelayOff); 
+		frame.add(Start); 
+		frame.add(SniperOffensive); 
+		frame.add(Sniper); 
+		frame.add(Odin); 
+		frame.add(AssaultRifle); 
+		frame.add(Shotgun); 
+		frame.add(OnlyInScope); 
+		frame.add(Activate); 
+		frame.add(Deactivate); 
+		frame.add(ClickDefinition);  
+		frame.add(ClickDefinition1); 
+		frame.add(AnzeigeClicks);
+		frame.add(kleiner); 
+		frame.add(größer); 
+		frame.add(StartButton); 
+		frame.add(StopButton); 
+		
+		frame.add(Line); 
+		frame.add(Background); 
+		
+		frame.setVisible(true);
+		
+		try {
+			Robot r = new Robot();
+			
+			for(int i = 0; i < wh; i ++) {
+
+				if (this.OneTimeShooting == true) {
+					clicks = 1; 
+				}
+				
+				if (this.Activated == false) {
+					System.out.println("Soft Aimbot stopped!"); 
+				} else {
+				
+				if (ShotgunModi == false) {
+					
+					if (OIS == true) { 	
+						
+						Color c1 = r.getPixelColor(500, 540); 
+						
+						if (c1.getRed() >= 0) {
+							if (c1.getRed() <= 30) { 
+								if (c1.getGreen() >= 0) {
+									if (c1.getGreen() <= 30) {
+										if (c1.getBlue() >= 0) {
+											if (c1.getBlue() <= 30) { 
+									
+			Color c = r.getPixelColor(x, y);
+			
+			if (c.getRed() >= RedMin) {
+				if (c.getRed() <= RedMax) {
+					if (c.getGreen() >= GreenMin) {
+						if (c.getGreen() <= GreenMax) {
+							if (c.getBlue() >= BlueMin) {
+								if (c.getBlue() <= BlueMax) { 
+									
+									if (DOff == false) {
+									
+									Random randomNum = new Random();
+									int Wait = minWait + randomNum.nextInt(maxWait);
+									
+									r.delay(Wait);
+									System.out.println("Waiting " + Wait + " ms!");
+									
+									}
+									
+									for(int i1 = 0; i1 < clicks; i1 ++) {
+										r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+										r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+										r.delay(wartezeit); 
+										}
+									
+						System.out.println(" ------------- Shoot! ------------- ");
+						
+								} else {
+									System.out.println("Blue Type wrong!"); 
+								}
+							} else {
+								System.out.println("Blue Type wrong!"); 
+							}
+						} else {
+							System.out.println("Green Type wrong!"); 
+						}
+					} else {
+						System.out.println("Green Type wrong!"); 
+					}
+				}else {
+					System.out.println("Red Type wrong!"); 
+				}
+			} else {
+				System.out.println("Red Type wrong!"); 
+			}
+			
+											} else {
+												System.out.print(""); 
+											}
+										} else {
+											System.out.print(""); 
+										}
+									} else {
+										System.out.print(""); 
+									}
+								} else {
+									System.out.print(""); 
+								}
+							} else {
+								System.out.print(""); 
+							}
+						} else {
+							System.out.print(""); 
+						}
+			
+				} else {
+					
+					Color c = r.getPixelColor(x, y);
+					
+					if (c.getRed() >= RedMin) {
+						if (c.getRed() <= RedMax) {
+							if (c.getGreen() >= GreenMin) {
+								if (c.getGreen() <= GreenMax) {
+									if (c.getBlue() >= BlueMin) {
+										if (c.getBlue() <= BlueMax) { 
+											
+											if (DOff == false) {
+											
+											Random randomNum = new Random();
+											int Wait = minWait + randomNum.nextInt(maxWait);
+											
+											r.delay(Wait);
+											System.out.println("Waiting " + Wait + " ms!");
+											
+											}
+											
+											for(int i1 = 0; i1 < clicks; i1 ++) {
+												r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+												r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+												r.delay(wartezeit); 
+												}
+											
+								System.out.println(" ------------- Shoot! ------------- ");
+								
+										} else {
+											System.out.println("Blue Type wrong!"); 
+										}
+									} else {
+										System.out.println("Blue Type wrong!"); 
+									}
+								} else {
+									System.out.println("Green Type wrong!"); 
+								}
+							} else {
+								System.out.println("Green Type wrong!"); 
+							}
+						}else {
+							System.out.println("Red Type wrong!"); 
+						}
+					} else {
+						System.out.println("Red Type wrong!"); 
+					}
+					
+				}
+			
+			}
+				
+				if (ShotgunModi == true) {
+					
+					Color ShotgunMiddle = r.getPixelColor(x, y);
+					
+					if (ShotgunMiddle.getRed() >= RedMin) {
+						if (ShotgunMiddle.getRed() <= RedMax) {
+							if (ShotgunMiddle.getGreen() >= GreenMin) {
+								if (ShotgunMiddle.getGreen() <= GreenMax) {
+									if (ShotgunMiddle.getBlue() >= BlueMin) {
+										if (ShotgunMiddle.getBlue() <= BlueMax) { 
+											
+											if (DOff == false) {
+											
+											Random randomNum = new Random();
+											int Wait = minWait + randomNum.nextInt(maxWait);
+											
+											r.delay(Wait);
+											System.out.println(Wait);
+											
+											}
+											
+								r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+								r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+								
+								System.out.println(" ------------- Shoot! ------------- ");
+								
+										} 
+									} 
+								} 
+							} 
+						}
+					}
+					
+					
+					Color ShotgunUp = r.getPixelColor(959, 505);
+					
+					if (ShotgunUp.getRed() >= RedMin) {
+						if (ShotgunUp.getRed() <= RedMax) {
+							if (ShotgunUp.getGreen() >= GreenMin) {
+								if (ShotgunUp.getGreen() <= GreenMax) {
+									if (ShotgunUp.getBlue() >= BlueMin) {
+										if (ShotgunUp.getBlue() <= BlueMax) { 
+											
+											if (DOff == false) {
+											
+											Random randomNum = new Random();
+											int Wait = minWait + randomNum.nextInt(maxWait);
+											
+											r.delay(Wait);
+											System.out.println(Wait);
+											
+											}
+											
+								r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+								r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+								
+								System.out.println(" ------------- Shoot! ------------- ");
+								
+										} 
+									} 
+								} 
+							} 
+						}
+					}
+					
+					
+					Color ShotgunDown = r.getPixelColor(959, 576);
+					
+					if (ShotgunDown.getRed() >= RedMin) {
+						if (ShotgunDown.getRed() <= RedMax) {
+							if (ShotgunDown.getGreen() >= GreenMin) {
+								if (ShotgunDown.getGreen() <= GreenMax) {
+									if (ShotgunDown.getBlue() >= BlueMin) {
+										if (ShotgunDown.getBlue() <= BlueMax) { 
+											
+											if (DOff == false) {
+											
+											Random randomNum = new Random();
+											int Wait = minWait + randomNum.nextInt(maxWait);
+											
+											r.delay(Wait);
+											System.out.println(Wait);
+											
+											}
+											
+								r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+								r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+								
+								System.out.println(" ------------- Shoot! ------------- ");
+								
+										} 
+									} 
+								} 
+							} 
+						}
+					}
+					
+					
+					Color ShotgunLeft = r.getPixelColor(924, 541);
+					
+					if (ShotgunLeft.getRed() >= RedMin) {
+						if (ShotgunLeft.getRed() <= RedMax) {
+							if (ShotgunLeft.getGreen() >= GreenMin) {
+								if (ShotgunLeft.getGreen() <= GreenMax) {
+									if (ShotgunLeft.getBlue() >= BlueMin) {
+										if (ShotgunLeft.getBlue() <= BlueMax) { 
+											
+											if (DOff == false) {
+											
+											Random randomNum = new Random();
+											int Wait = minWait + randomNum.nextInt(maxWait);
+											
+											r.delay(Wait);
+											System.out.println(Wait);
+											
+											}
+											
+								r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+								r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+								
+								System.out.println(" ------------- Shoot! ------------- ");
+								
+										} 
+									} 
+								} 
+							} 
+						}
+					}
+					
+					
+					Color ShotgunRight = r.getPixelColor(994, 541);
+					
+					if (ShotgunRight.getRed() >= RedMin) {
+						if (ShotgunRight.getRed() <= RedMax) {
+							if (ShotgunRight.getGreen() >= GreenMin) {
+								if (ShotgunRight.getGreen() <= GreenMax) {
+									if (ShotgunRight.getBlue() >= BlueMin) {
+										if (ShotgunRight.getBlue() <= BlueMax) { 
+											
+											if (DOff == false) {
+											
+											Random randomNum = new Random();
+											int Wait = minWait + randomNum.nextInt(maxWait);
+											
+											r.delay(Wait);
+											System.out.println(Wait);
+											
+											}
+											
+								r.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+								r.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+								
+								System.out.println(" ------------- Shoot! ------------- ");
+								
+										} 
+									} 
+								} 
+							} 
+						}
+					} 
+					
+					
+				}
+			}
+				
+				System.out.println("Sleeping " + sleep + " ms");
+				System.out.println();
+				AnzeigeClicks.setText("" + clicks); 
+				
+				
+				
+				r.delay(sleep);
+
+				wh ++; 
+				
+				
+			}
+				
+		} catch (AWTException e) {
+			e.printStackTrace();
+		} 
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if (e.getSource() == StartButton) {
+			Start.setText("Soft Aimbot has started!");
+			Start.setBounds(165, 210, 1000, 100);
+			Start.setVisible(true);
+			StartButton.setVisible(false);
+			StopButton.setVisible(true); 
+			Activated = true; 
+		}
+		
+		if (e.getSource() == StopButton) {
+			Start.setText("Soft Aimbot has stopped!");
+			Start.setBounds(160, 210, 1000, 100);
+			StartButton.setVisible(true);
+			StopButton.setVisible(false); 
+			Activated = false; 
+		}
+		
+		if(e.getSource() == größer) {
+			
+			clicks = clicks + 1; 
+			
+			if (clicks >= 99) {
+				clicks = 99; 
+			}
+			
+			System.out.println(clicks);
+			
+		}
+		
+		if(e.getSource() == kleiner) {
+			
+			clicks = clicks - 1; 
+			
+			if (clicks <= 1) {
+				clicks = 1; 
+				System.out.println(clicks);
+			}
+
+			System.out.println(clicks);
+			
+		}
+		
+		if(e.getSource() == Activate) {
+			
+			Activate.setVisible(false);
+			Deactivate.setVisible(true);
+			
+			this.OneTimeShooting = false; 
+			
+			kleiner.setEnabled(true);
+			größer.setEnabled(true);
+			
+		}
+		
+		if(e.getSource() == Deactivate) {
+			
+			kleiner.setEnabled(false);
+			größer.setEnabled(false);
+			
+			this.OneTimeShooting = true; 
+			AnzeigeClicks.setText("1"); 
+			
+			Deactivate.setVisible(false);
+			Activate.setVisible(true);
+		}
+		
+		if (e.getSource() == OnlyInScope) {
+			RedMin = 120; 
+			RedMax = 350;  
+			GreenMin = 10; 
+			GreenMax = 80; 
+			BlueMin = 10; 
+			BlueMax = 80; 
+	        SniperOffensive.setBackground(Color.white);
+	        Sniper.setBackground(Color.white);
+	        OnlyInScope.setBackground(Color.green);
+	        OnlyInScope.setForeground(Color.DARK_GRAY);
+			Odin.setBackground(Color.white);
+			AssaultRifle.setBackground(Color.white);
+			Shotgun.setBackground(Color.white);
+			ShotgunModi = false;
+			AssaultRifleShooting = false; 
+			wartezeit = 125; 
+			OIS = true; 
+		}
+		
+		if(e.getSource() == Shotgun) {
+			RedMin = 180; 
+			RedMax = 255;  
+			GreenMin = 25; 
+			GreenMax = 85; 
+			BlueMin = 25; 
+			BlueMax = 105;
+			OnlyInScope.setBackground(Color.white);
+			Shotgun.setBackground(Color.green);
+			SniperOffensive.setBackground(Color.white);
+			Sniper.setBackground(Color.white);
+			Odin.setBackground(Color.white);
+			AssaultRifle.setBackground(Color.white);
+			ShotgunModi = true; 
+			AssaultRifleShooting = false; 
+			wartezeit = 400;
+			OIS = false; 
+		}
+		
+		if(e.getSource() == Sniper) {
+			RedMin = 120; 
+			RedMax = 350;  
+			GreenMin = 10; 
+			GreenMax = 80; 
+			BlueMin = 10; 
+			BlueMax = 80; 
+			OnlyInScope.setBackground(Color.white);
+	        SniperOffensive.setBackground(Color.white);
+			Sniper.setBackground(Color.green);
+			Sniper.setForeground(Color.DARK_GRAY);
+			Odin.setBackground(Color.white);
+			AssaultRifle.setBackground(Color.white);
+			Shotgun.setBackground(Color.white);
+			ShotgunModi = false;
+			AssaultRifleShooting = false; 
+			wartezeit = 125; 
+			OIS = false;
+		}
+		
+		if(e.getSource() == Odin) {
+			RedMin = 160; 
+            RedMax = 255;
+            GreenMin = 20; 
+            GreenMax = 90; 
+            BlueMin = 20; 
+            BlueMax = 111; 
+            OnlyInScope.setBackground(Color.white);
+            SniperOffensive.setBackground(Color.white);
+			Sniper.setBackground(Color.white);
+			Odin.setBackground(Color.green);
+			AssaultRifle.setBackground(Color.white);
+			Shotgun.setBackground(Color.white);
+			ShotgunModi = false;
+			AssaultRifleShooting = false; 
+			wartezeit = 90;
+			OIS = false;
+		}
+		
+		if(e.getSource() == AssaultRifle) {
+			RedMin = 165; 
+            RedMax = 255;
+            GreenMin = 25; 
+            GreenMax = 80; 
+            BlueMin = 25; 
+            BlueMax = 105; 
+            OnlyInScope.setBackground(Color.white);
+            SniperOffensive.setBackground(Color.white);
+			Sniper.setBackground(Color.white);
+			Odin.setBackground(Color.white);
+			AssaultRifle.setBackground(Color.green);
+			Shotgun.setBackground(Color.white);
+			ShotgunModi = false;
+			AssaultRifleShooting = true; 
+			wartezeit = 125; 
+			OIS = false;
+		}
+		
+		if(e.getSource() == SniperOffensive) {
+			RedMin = 180; 
+	        RedMax = 255;  
+	        GreenMin = 25; 
+	        GreenMax = 85; 
+	        BlueMin = 25; 
+	        BlueMax = 105; 
+	        OnlyInScope.setBackground(Color.white);
+	        SniperOffensive.setBackground(Color.green);
+			Sniper.setBackground(Color.white);
+			Odin.setBackground(Color.white);
+			AssaultRifle.setBackground(Color.white);
+			Shotgun.setBackground(Color.white);
+			ShotgunModi = false;
+			AssaultRifleShooting = false; 
+			wartezeit = 125; 
+			OIS = false;
+		}
+		
+		if(e.getSource() == DelayOn) {
+			DelayOn.setBackground(Color.green);
+			DelayOff.setBackground(Color.white);
+			AllDelayOff.setBackground(Color.white);
+			sleep = 1; 
+			minWait = 1; 
+			maxWait = 5; 
+			DOff = false; 
+		}
+		
+		if(e.getSource() == DelayOff) {
+			DelayOn.setBackground(Color.white);
+			DelayOff.setBackground(Color.green);
+			AllDelayOff.setBackground(Color.white);
+			DOff = true; 
+		}
+		
+		if(e.getSource() == AllDelayOff) {
+			DelayOn.setBackground(Color.white);
+			DelayOff.setBackground(Color.white);
+			AllDelayOff.setBackground(Color.red);
+			DOff = true; 
+			sleep = 0; 
+		}
+		
+	}
+
+}
