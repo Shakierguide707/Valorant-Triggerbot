@@ -6,3 +6,5 @@
 4. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example! 
 
 Crosshair profile code : 0;s;1;P;0o;6;1o;14;S;d;0
+
+My Discord: Trenied#5577
