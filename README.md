@@ -1,4 +1,4 @@
-# Valorant-Trigger-Aimbot
+# Valorant-!Trigger!-Aimbot
 
 If you want to download version 1.5.1 or older:
 1. Copy the code and then paste it into an application like Eclipse (Java!)
