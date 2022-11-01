@@ -12,6 +12,6 @@ If you want to download version 1.6.1 or newer:
 3. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
 
 
-Crosshair profile code : 0;s;1;P;0o;6;1o;14;S;d;0
+Crosshair profile code : 0;s;1;P;c;8;u;015FFFFF;o;1;b;1;f;0;0l;5;0o;6;0a;0.5;0m;1;0f;0;1b;0;S;d;0
 
 My Discord: Trenied#5577
