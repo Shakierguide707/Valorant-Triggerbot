@@ -5,7 +5,9 @@ If you want to download version 1.5.1 or older:
 2. For the Valorant Trigger Aimbot it is absolutely necessary to start the executable in admin mode!
 3. If you want the bot to work properly, it is important that you set the Valorant enemy color back to red if you have changed it!
 4. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
+
 !!!Important!!! Versions below 1.6.2 are not worth using. They are just here for archive reasons.
+
 If you want to download version 1.6.1 or newer:
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode!
 2. If you want the bot to work properly, it is important that you set the Valorant enemy color back to red if you have changed it!
