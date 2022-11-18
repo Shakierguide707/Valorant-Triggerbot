@@ -16,4 +16,5 @@ If you want to download version 1.6.1 or newer:
 Only contact us if there is a real problem with the bot. Do not contact us if there is a problem with Java.
 Crosshair profile code : 0;s;1;P;c;8;u;015FFFFF;o;1;b;1;f;0;0l;5;0o;6;0a;0.5;0m;1;0f;0;1b;0;S;d;0
 
-Discord: Trenied#5577 or Shakierguide707
+Discord: Trenied#5577
+
