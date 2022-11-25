@@ -16,5 +16,7 @@
 Only contact us if there is a real problem with the bot. Do not contact us if there is a problem with Java.
 Crosshair profile code : 0;s;1;P;c;8;u;015FFFFF;o;1;b;1;f;0;0l;5;0o;6;0a;0.5;0m;1;0f;0;1b;0;S;d;0
 
+In case you get an error when you start the program (with: Java(TM) Platform SE binary), download this Java version https://www.techspot.com/downloads/7407-java-se-16.html
+
 Discord: Trenied#5577
 
