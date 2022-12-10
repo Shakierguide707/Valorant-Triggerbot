@@ -1,4 +1,4 @@
-# Valorant-!Trigger!-Aimbot
+# Valorant-Triggerbot
 
   If you want to start version 1.6.1 or newer:
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
