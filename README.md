@@ -8,7 +8,7 @@
   Then write in PowerShell: "start " + full path of the file + ".jar".)
 2. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
 
-  If you want to use version 1.6.1 or newer:
+  If you want to use version 1.6.1 - 1.6.3:
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
   (To start the Valorant TriggerBot in admin mode, start PowerShell in admin mode 
   (Right click on the Windows Start button and select "Windows PowerShell (Administrator)". 
