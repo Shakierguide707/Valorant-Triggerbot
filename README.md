@@ -5,14 +5,16 @@
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
   (To start the Valorant TriggerBot in admin mode, start PowerShell in admin mode 
   (Right click on the Windows Start button and select "Windows PowerShell (Administrator)". 
-  Then write in PowerShell: "start " + full path of the file + ".jar".)
+  Then write in PowerShell: "start " + full path of the file + ".jar".
+  In case you get an error even though you're sure you wrote everything correctly, rename the file.)
 2. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
 
   If you want to use version 1.6.1 - 1.6.3:
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
   (To start the Valorant TriggerBot in admin mode, start PowerShell in admin mode 
   (Right click on the Windows Start button and select "Windows PowerShell (Administrator)". 
-  Then write in PowerShell: "start " + full path of the file + ".jar".)
+  Then write in PowerShell: "start " + full path of the file + ".jar".
+  In case you get an error even though you're sure you wrote everything correctly, rename the file.)
 2. If you want the bot to work properly, it is important that you set the Valorant enemy color back to red if you have changed it!
 3. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
 
