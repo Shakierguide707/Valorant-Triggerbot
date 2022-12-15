@@ -1,7 +1,5 @@
 # Valorant-Triggerbot
 
-(Sorry for "inactivity"! I'm currently programming version 2.0, a huge change! If you have to do it all alone, it takes a while, sorry.)
-
   If you want to start version 1.6.1 or newer:
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
   (To start the Valorant TriggerBot in admin mode, start PowerShell in admin mode 
