@@ -9,11 +9,17 @@ Version 2.0:
 
 ![image](https://user-images.githubusercontent.com/109001989/208522394-a5d3e875-1ee1-46c0-a244-d43d0e5e5bfa.png)
 
+Or create your own RGB values: 
+
 ![image](https://user-images.githubusercontent.com/109001989/208522451-a45b35ce-e96c-4ff2-9d17-5e3666512b27.png)
 
 ![image](https://user-images.githubusercontent.com/109001989/208522493-86d647ec-b88e-416c-a664-a3ce0b00a7c1.png)
 
+Adapt the program to you: 
+
 ![image](https://user-images.githubusercontent.com/109001989/208522544-f4821653-beaa-44bd-9749-626f67da1442.png)
+
+Customizable scan areas: 
 
 ![image](https://user-images.githubusercontent.com/109001989/208521907-044dd0d0-b2c7-4a35-9a17-322da467e34e.png)
 
