@@ -1,5 +1,18 @@
 # Valorant-Triggerbot
 
+
+Version 2.0: 
+
+![image](https://user-images.githubusercontent.com/109001989/208521581-70fcdb17-8115-48b6-8050-575a36836036.png)
+
+![image](https://user-images.githubusercontent.com/109001989/208521766-50489866-9ecf-4774-8e7e-7756a20365db.png)
+
+![image](https://user-images.githubusercontent.com/109001989/208521832-63e0d4df-0459-419a-97b9-1abedcb5e044.png)
+
+![image](https://user-images.githubusercontent.com/109001989/208521652-d3506bb4-1846-407b-91e9-df65848b41ae.png)
+
+![image](https://user-images.githubusercontent.com/109001989/208521907-044dd0d0-b2c7-4a35-9a17-322da467e34e.png)
+
   If you want to use version 2.0 or newer:
   
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
@@ -29,5 +42,3 @@ Crosshair profile code : 0;s;1;P;c;8;u;015FFFFF;o;1;b;1;f;0;0l;5;0o;6;0a;0.5;0m;
 In case you get an error when you start the program (with: Java(TM) Platform SE binary), download this Java version https://www.techspot.com/downloads/7407-java-se-16.html
 
 Discord: Trenied#5577
-
-![image](https://user-images.githubusercontent.com/109001989/208521248-3220f61f-8f13-4d46-823f-c41d2492cb11.png)
