@@ -30,3 +30,4 @@ In case you get an error when you start the program (with: Java(TM) Platform SE 
 
 Discord: Trenied#5577
 
+![image](https://user-images.githubusercontent.com/109001989/208521248-3220f61f-8f13-4d46-823f-c41d2492cb11.png)
