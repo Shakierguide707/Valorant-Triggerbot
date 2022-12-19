@@ -3,13 +3,19 @@
 
 Version 2.0: 
 
+A simple start menu that gives you a quick overview of some data: 
+
 ![image](https://user-images.githubusercontent.com/109001989/208522229-044c8e55-2a48-4a7d-9b34-811a382ec3dc.png)
+
+Choose what type of weapon you use: 
 
 ![image](https://user-images.githubusercontent.com/109001989/208522361-7f18561f-59fd-4bfd-95dd-8a9a3a400785.png)
 
+Change the action taken when an enemy is spotted: 
+
 ![image](https://user-images.githubusercontent.com/109001989/208522394-a5d3e875-1ee1-46c0-a244-d43d0e5e5bfa.png)
 
-Or create your own RGB values: 
+Create your own RGB values: 
 
 ![image](https://user-images.githubusercontent.com/109001989/208522451-a45b35ce-e96c-4ff2-9d17-5e3666512b27.png)
 
