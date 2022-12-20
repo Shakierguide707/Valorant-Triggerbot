@@ -29,6 +29,8 @@ Customizable scan areas:
 
 ![image](https://user-images.githubusercontent.com/109001989/208521907-044dd0d0-b2c7-4a35-9a17-322da467e34e.png)
 
+and more!
+
   If you want to use version 2.0 or newer:
   
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
