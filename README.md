@@ -1,7 +1,7 @@
 # Valorant-Triggerbot
 
 
-Version 2.0 & >: 
+Version 2.0 or newer: 
 
 A simple start menu that gives you a quick overview of some data: 
 
