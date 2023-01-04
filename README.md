@@ -36,8 +36,6 @@
 ![image](https://user-images.githubusercontent.com/109001989/208522493-86d647ec-b88e-416c-a664-a3ce0b00a7c1.png)
 
 ![image](https://user-images.githubusercontent.com/109001989/208522544-f4821653-beaa-44bd-9749-626f67da1442.png)
-
-![image](https://user-images.githubusercontent.com/109001989/208521907-044dd0d0-b2c7-4a35-9a17-322da467e34e.png)
   
   # Example Crosshair Code: 
   
