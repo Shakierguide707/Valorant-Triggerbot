@@ -39,11 +39,17 @@
 
 ![image](https://user-images.githubusercontent.com/109001989/208521907-044dd0d0-b2c7-4a35-9a17-322da467e34e.png)
   
+  # Example Crosshair Code: 
+  
+ 0;s;1;P;c;8;u;015FFFFF;o;1;b;1;f;0;0l;5;0o;6;0a;0.5;0m;1;0f;0;1b;0;S;d;0
+
+  
   # ❗️ Instructions ❗️
   
-Only contact me if there is a real problem with the bot. Do not contact me if there is a problem with Java.
-Example Crosshair profile code : 0;s;1;P;c;8;u;015FFFFF;o;1;b;1;f;0;0l;5;0o;6;0a;0.5;0m;1;0f;0;1b;0;S;d;0
+Only contact me if there is a real problem with the bot. Do not contact me if there is a problem with Java!
 
 In case you get an error when you start the program (with: Java(TM) Platform SE binary), download this Java version https://www.techspot.com/downloads/7407-java-se-16.html
+
+I am not responsible for the unlikely event of a ban!
 
 Discord: Trenied#5577
