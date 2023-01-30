@@ -1,3 +1,5 @@
+# VERY IMPORTANT
+
 # Installation Version 2.0 or newer:
   
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
