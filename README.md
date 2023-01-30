@@ -1,5 +1,7 @@
 # VERY IMPORTANT
 
+Due to an update to Valorant (which causes all mouse input to be ignored) versions 2.2 and below no longer work!
+
 # Installation Version 2.0 or newer:
   
 1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
