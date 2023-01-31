@@ -1,4 +1,4 @@
-# VERY IMPORTANT
+# ❗️ VERY IMPORTANT: 
 
 Due to an update to Valorant (which causes all mouse input to be ignored) versions 2.2 and below no longer work!
 
@@ -56,7 +56,7 @@ Installation Version 1.5.1 or older:
 3. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
   
   
-  # ❗️ Instructions ❗️
+  # ❗️ Instructions 
   
 Only contact me if there is a real problem with the bot. Do not contact me if there is a problem with Java!
 
