@@ -12,7 +12,7 @@ Due to an update to Valorant (which causes all mouse input to be ignored) versio
 2. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
 3. Set "o" as secondary key to shoot in Valorant's settings!
 
-# Preview of version 2.0 or newer: 
+# Preview of version 2.0: 
 
 ![image](https://user-images.githubusercontent.com/109001989/208522229-044c8e55-2a48-4a7d-9b34-811a382ec3dc.png)
 
