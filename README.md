@@ -1,3 +1,7 @@
+# → Download of the latest version: 
+
+
+
 # ❗️ VERY IMPORTANT: 
 
 Due to an update to Valorant (which causes all mouse input to be ignored) versions 2.2 and below no longer work!
