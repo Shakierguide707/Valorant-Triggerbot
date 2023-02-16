@@ -64,7 +64,7 @@ Installation Version 1.5.1 or older:
   
 Only contact me if there is a real problem with the bot. Do not contact me if there is a problem with Java!
 
-In case you get an error when you start the program (with: Java(TM) Platform SE binary), download this Java version https://www.techspot.com/downloads/7407-java-se-16.html
+Error when you start the program (with: Java(TM) Platform SE binary), download this Java version https://www.techspot.com/downloads/7407-java-se-16.html
 
 I am not responsible for the unlikely event of a ban!
 
