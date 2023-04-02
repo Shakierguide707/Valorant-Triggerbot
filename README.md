@@ -1,6 +1,7 @@
 # SORRY!
 
 I am aware that there are some bugs in the current versions (see point 1 for a list of bugs).
+
 Version 3.0 will be released soon in which all these errors will be fixed.
 
 # Download of the latest version: 
