@@ -1,3 +1,7 @@
+#SORRY!
+I am aware that there are some bugs in the current versions (see point 1 for a list of bugs).
+Version 3.0 will be released soon in which all these errors will be fixed.
+
 # Download of the latest version: 
 
 https://github.com/Trenied-12/Valorant-Triggerbot/raw/main/Valorant_Triggerbot(Version_2.4)/Valorant_Triggerbot.jar
