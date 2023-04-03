@@ -46,32 +46,6 @@ Due to an update to Valorant (which causes all mouse input to be ignored) versio
   
  0;s;1;P;c;8;u;015FFFFF;o;1;b;1;f;0;0l;5;0o;6;0a;0.5;0m;1;0f;0;1b;0;S;d;0
 
-  
-  # Installation of older versions (Not necessary!): 
-  
-  Installation Version 2.0 - 2.2:
-1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
-  (To start the Valorant TriggerBot in admin mode, start PowerShell in admin mode 
-  (Right click on the Windows Start button and select "Windows PowerShell (Administrator)". 
-  Then write in PowerShell: "start " + full path of the file + ".jar".
-  In case you get an error even though you're sure you wrote everything correctly, rename the file.)
-2. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
-
-Installation Version 1.6.1 - 1.6.3:
-1. For the Valorant Trigger Aimbot it is absolutely necessary to start the file in admin mode! 
-  (To start the Valorant TriggerBot in admin mode, start PowerShell in admin mode 
-  (Right click on the Windows Start button and select "Windows PowerShell (Administrator)". 
-  Then write in PowerShell: "start " + full path of the file + ".jar".
-  In case you get an error even though you're sure you wrote everything correctly, rename the file.)
-2. If you want the bot to work properly, it is important that you set the Valorant enemy color back to red if you have changed it!
-3. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
-
-Installation Version 1.5.1 or older:
-1. Copy the code and then paste it into an application like Eclipse which needs to be in admin mode (Java!).
-2. If you want the bot to work properly, it is important that you set the Valorant enemy color back to red if you have changed it!
-3. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
-  
-  
   # ❗️ Instructions 
   
 Only contact me if there is a real problem with the bot. Do not contact me if there is a problem with Java!
