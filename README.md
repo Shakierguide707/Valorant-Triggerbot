@@ -1,3 +1,8 @@
+# Future plans: 
+
+1. Version 3.0
+2. Very simple performance extra version
+
 # SORRY!
 
 I am aware that there are some bugs in the current versions (See: Current possible errors).
