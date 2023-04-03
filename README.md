@@ -1,7 +1,7 @@
 # Future plans: 
 
 1. Version 3.0
-2. Very simple performance extra version
+2. A simply designed performance version
 
 # SORRY!
 
