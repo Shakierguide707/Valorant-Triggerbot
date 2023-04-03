@@ -1,8 +1,14 @@
 # SORRY!
 
-I am aware that there are some bugs in the current versions (see point 1 for a list of bugs).
+I am aware that there are some bugs in the current versions.
 
 Version 3.0 will be released soon in which all these errors will be fixed.
+
+Current possible errors:
+
+1. Random shots
+2. Program doesn't fire due to error in output
+3. With screen resolution other than 1920, 1080, screen scan does not work
 
 # Download of the latest version: 
 
