@@ -50,7 +50,7 @@ Due to an update to Valorant (which causes all mouse input to be ignored) versio
   
 Only contact me if there is a real problem with the bot. Do not contact me if there is a problem with Java!
 
-If you get an error when you start the program (with: Java(TM) Platform SE binary), download this Java version https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html
+If you get an error when you start the program (with: Java(TM) Platform SE binary), download the Version 16.0.2 https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html
 
 I am not responsible for the unlikely event of a ban!
 
