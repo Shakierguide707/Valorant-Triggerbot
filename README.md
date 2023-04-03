@@ -3,6 +3,7 @@
 I am aware that there are some bugs in the current versions (See: Current possible errors).
 
 Version 3.0 will be released soon in which all these errors will be fixed.
+Version 3.0 release date (estimate): 1.05.2023
 
 Current possible errors:
 1. Random shots
