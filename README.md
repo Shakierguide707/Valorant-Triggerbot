@@ -18,7 +18,7 @@ https://github.com/Trenied-12/Valorant-Triggerbot/raw/main/Valorant_Triggerbot(V
 
 Due to an update to Valorant (which causes all mouse input to be ignored) versions 2.2 and below no longer work!
 
-# Installing version 2.3 and newer:
+# Start version 2.3 and newer:
   
 1. For the Valorant Triggerbot it is absolutely necessary to start the file in admin mode! 
   (To start the Valorant TriggerBot in admin mode, start PowerShell in admin mode 
