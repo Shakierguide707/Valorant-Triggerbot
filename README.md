@@ -20,7 +20,7 @@ https://github.com/Trenied-12/Valorant-Triggerbot/raw/main/Valorant_Triggerbot(V
 
 # Start Performance Version: 
 
-1. Download the Performance Version (
+1. Download the Performance Version (https://github.com/Trenied-12/Valorant-Triggerbot/raw/main/PerformanceVersion.jar)
 2. Open cmd in Admin mode
 3. Type: java -jar <Path of the File>.jar (Example: java -jar C:\Users\Trenied\Desktop\PerformanceVersion.jar)
 4. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
