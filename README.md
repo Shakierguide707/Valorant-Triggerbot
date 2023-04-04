@@ -20,10 +20,11 @@ https://github.com/Trenied-12/Valorant-Triggerbot/raw/main/Valorant_Triggerbot(V
 
 # Start Performance Version: 
 
-1. Open cmd in Admin mode
-2. Type: java -jar <Path of the File>.jar (Example: java -jar C:\Users\Trenied\Desktop\PerformanceVersion.jar)
-3. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
-4. Set "o" as secondary key to shoot in Valorant's settings!
+1. Download the Performance Version (
+2. Open cmd in Admin mode
+3. Type: java -jar <Path of the File>.jar (Example: java -jar C:\Users\Trenied\Desktop\PerformanceVersion.jar)
+4. In the Valorant crosshair settings it is important that you use a crosshair without a center or import the crosshair code below into valorant for example!
+5. Set "o" as secondary key to shoot in Valorant's settings!
 
 # Start version 2.3 and newer:
   
